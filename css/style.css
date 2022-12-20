@@ -1,0 +1,475 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap");
+:root {
+  --color-bg: #1f1f38;
+  --color-bg-variant: #2c2c6c;
+  --color-primary: #4db5ff;
+  --color-primary-variant: rgba(77, 181, 255, 0.4);
+  --color-white: #fff;
+  --color-light: rgba(255, 255, 255,0.6);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+nav {
+  background-color: var(--color-bg);
+}
+nav .links-container {
+  padding: 20px 0;
+  width: 1000px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+nav .links-container h3 {
+  font-size: 30px;
+  font-weight: 600;
+  color: #fff;
+}
+nav .links-container h3::after {
+  content: "lio";
+  color: var(--color-primary);
+}
+nav .links-container ul {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 50px;
+}
+nav .links-container ul li {
+  list-style: none;
+}
+nav .links-container ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 500;
+  font-size: 16px;
+  transition: all 0.5s ease-in;
+}
+nav .links-container ul li a:hover {
+  color: var(--color-primary);
+}
+
+main {
+  background-color: var(--color-bg);
+}
+main .main-container, main .main-container5, main .main-container4, main .main-container3, main .main-container2 {
+  width: 1000px;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  padding: 50px 0;
+}
+main .main-container .text-container, main .main-container5 .text-container, main .main-container4 .text-container, main .main-container3 .text-container, main .main-container2 .text-container {
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 50%;
+}
+main .main-container .text-container h3, main .main-container5 .text-container h3, main .main-container4 .text-container h3, main .main-container3 .text-container h3, main .main-container2 .text-container h3 {
+  font-size: 36px;
+  font-weight: 800;
+}
+main .main-container .text-container .pOne, main .main-container5 .text-container .pOne, main .main-container4 .text-container .pOne, main .main-container3 .text-container .pOne, main .main-container2 .text-container .pOne {
+  font-weight: bold;
+}
+main .main-container .text-container .pTwo::after, main .main-container5 .text-container .pTwo::after, main .main-container4 .text-container .pTwo::after, main .main-container3 .text-container .pTwo::after, main .main-container2 .text-container .pTwo::after {
+  content: "Developer";
+  color: var(--color-primary);
+}
+main .main-container .text-container p, main .main-container5 .text-container p, main .main-container4 .text-container p, main .main-container3 .text-container p, main .main-container2 .text-container p {
+  font-size: 16px;
+}
+main .main-container .text-container .largeP, main .main-container5 .text-container .largeP, main .main-container4 .text-container .largeP, main .main-container3 .text-container .largeP, main .main-container2 .text-container .largeP {
+  line-height: 23px;
+}
+main .main-container .text-container a, main .main-container5 .text-container a, main .main-container4 .text-container a, main .main-container3 .text-container a, main .main-container2 .text-container a {
+  text-decoration: none;
+  color: var(--color-primary);
+  border: 1px solid var(--color-primary);
+  padding: 10px;
+  width: fit-content;
+  transition: all 0.3s ease-in;
+}
+main .main-container .text-container a:hover, main .main-container5 .text-container a:hover, main .main-container4 .text-container a:hover, main .main-container3 .text-container a:hover, main .main-container2 .text-container a:hover {
+  color: var(--color-bg-variant);
+  background-color: var(--color-primary);
+  border: 1px solid var(--color-bg-variant);
+  box-shadow: rgba(77, 181, 255, 0.5) 8px 8px;
+}
+main .main-container .image-container img, main .main-container5 .image-container img, main .main-container4 .image-container img, main .main-container3 .image-container img, main .main-container2 .image-container img {
+  width: 400px;
+  border-radius: 5000px;
+}
+main .main-container2 .image-container2 img {
+  width: 400px;
+  border-radius: 15px;
+}
+main .main-container2 .text-container2 {
+  display: flex;
+  flex-direction: column;
+  width: 55%;
+  gap: 30px;
+}
+main .main-container2 .text-container2 .card-container {
+  display: flex;
+  gap: 20px;
+}
+main .main-container2 .text-container2 .card-container div {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  align-items: center;
+  background-color: var(--color-bg-variant);
+  padding: 20px;
+  border-radius: 10px;
+  width: 170px;
+}
+main .main-container2 .text-container2 .card-container div h5 {
+  color: var(--color-white);
+}
+main .main-container2 .text-container2 .card-container div p {
+  font-size: 13px;
+  color: var(--color-white);
+}
+main .main-container2 .text-container2 .card-container div i {
+  font-size: 18px;
+  color: var(--color-primary);
+}
+main .main-container2 .text-container2 .info-container p {
+  color: var(--color-white);
+  line-height: 20px;
+}
+main .main-container2 .text-container2 .talk-container a {
+  text-decoration: none;
+  color: var(--color-bg-variant);
+  background-color: var(--color-primary);
+  border: 1px solid var(--color-primary);
+  padding: 10px;
+  width: fit-content;
+  transition: all 0.3s ease-in;
+}
+main .main-container2 .text-container2 .talk-container a:hover {
+  color: var(--color-primary);
+  background: none;
+  border: 1px solid var(--color-primary);
+  box-shadow: var(--color-bg-variant) 8px 8px;
+}
+main .main-container3 {
+  justify-content: center;
+}
+main .main-container3 .frontInfo {
+  padding: 20px 100px;
+  background-color: var(--color-bg-variant);
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  gap: 30px;
+}
+main .main-container3 .frontInfo .title {
+  color: var(--color-primary);
+  font-weight: 600;
+  text-align: center;
+  font-size: 18px;
+}
+main .main-container3 .frontInfo .skills {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 100px;
+}
+main .main-container3 .frontInfo .skills .allInfo {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+main .main-container3 .frontInfo .skills .allInfo i {
+  color: var(--color-primary);
+}
+main .main-container3 .frontInfo .skills .allInfo .language {
+  color: var(--color-white);
+}
+main .main-container3 .frontInfo .skills .allInfo .language p:first-child {
+  font-weight: bold;
+}
+main .main-container3 .frontInfo .skills .allInfo .language p:last-child {
+  font-weight: lighter;
+  font-size: 14px;
+}
+main .main-container4 {
+  flex-wrap: wrap;
+}
+main .main-container4 .cards {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--color-bg-variant);
+  padding: 20px;
+  border-radius: 10px;
+  gap: 15px;
+  width: 300px;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+main .main-container4 .cards img {
+  width: 260px;
+  border-radius: 10px;
+}
+main .main-container4 .cards p {
+  color: var(--color-white);
+  font-size: 14px;
+}
+main .main-container4 .cards .buttons {
+  margin: 10px 0;
+}
+main .main-container4 .cards .buttons a {
+  text-decoration: none;
+  padding: 10px;
+  font-size: 14px;
+  color: var(--color-primary);
+  border: 1px solid var(--color-primary);
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  transition: all 0.3s ease-in;
+}
+main .main-container4 .cards .buttons a:hover {
+  color: var(--color-bg-variant);
+  border: 1px solid var(--color-primary);
+  background: var(--color-primary);
+}
+main .title-about {
+  text-align: center;
+}
+main .title-about p {
+  color: var(--color-white);
+}
+main .title-about h2 {
+  color: var(--color-primary);
+}
+main .main-container5 {
+  justify-content: center;
+  gap: 20px;
+}
+main .main-container5 form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+main .main-container5 form input {
+  background: none;
+  color: var(--color-white);
+  width: 300px;
+  padding: 20px;
+  border: 1px solid var(--color-primary);
+  border-radius: 10px;
+}
+main .main-container5 form button {
+  width: 120px;
+  padding: 8px;
+  background-color: var(--color-primary);
+  border-radius: 5px;
+  border: 1px solid var(--color-primary);
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  transition: all 0.3s ease-in;
+}
+main .main-container5 form button:hover {
+  color: var(--color-primary);
+  background: none;
+  border: 1px solid var(--color-primary);
+  box-shadow: var(--color-bg-variant) 8px 8px;
+}
+main .main-container5 .socialCards .card-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+main .main-container5 .socialCards .card-container a {
+  text-decoration: none;
+}
+main .main-container5 .socialCards .card-container div {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  align-items: center;
+  background-color: var(--color-bg-variant);
+  padding: 20px;
+  border-radius: 10px;
+  width: 200px;
+  transition: all 0.3s ease-in;
+}
+main .main-container5 .socialCards .card-container div:hover {
+  border: 1px solid var(--color-primary);
+  box-shadow: var(--color-primary) 8px 8px;
+}
+main .main-container5 .socialCards .card-container div h5 {
+  color: var(--color-white);
+}
+main .main-container5 .socialCards .card-container div p {
+  font-size: 13px;
+  color: var(--color-white);
+}
+main .main-container5 .socialCards .card-container div i {
+  font-size: 20px;
+  color: var(--color-primary);
+}
+
+footer {
+  background: var(--color-primary);
+}
+footer .footerContent {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  padding: 70px 0;
+}
+footer .footerContent h3 {
+  text-transform: uppercase;
+  font-size: 26px;
+  color: var(--color-bg);
+}
+footer .footerContent ul {
+  display: flex;
+  gap: 20px;
+}
+footer .footerContent ul li {
+  list-style: none;
+}
+footer .footerContent ul li a {
+  text-decoration: none;
+  color: var(--color-bg);
+}
+footer .footerContent .socialMedia {
+  display: flex;
+  gap: 15px;
+}
+footer .footerContent .socialMedia a {
+  text-decoration: none;
+  color: var(--color-white);
+  background: var(--color-bg);
+  padding: 8px;
+  border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+
+@media (max-width: 1023px) {
+  nav {
+    background: none;
+  }
+  nav .links-container {
+    width: 100%;
+    background: rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(15px);
+    padding: 20px;
+    position: fixed;
+    bottom: 0;
+    justify-content: center;
+  }
+  nav .links-container i {
+    font-size: 18px;
+  }
+  nav .porTitle {
+    display: none;
+  }
+  main .main-container, main .main-container2, main .main-container3, main .main-container4, main .main-container5 {
+    width: 100%;
+    justify-content: center;
+  }
+  main .main-container .image-container, main .main-container2 .image-container, main .main-container3 .image-container, main .main-container4 .image-container, main .main-container5 .image-container {
+    display: none;
+  }
+  main .main-container .text-container, main .main-container2 .text-container, main .main-container3 .text-container, main .main-container4 .text-container, main .main-container5 .text-container {
+    width: 75%;
+  }
+  main .main-container2 {
+    width: 100%;
+    justify-content: center;
+  }
+  main .main-container2 .image-container2 {
+    display: none;
+  }
+  main .main-container2 .text-container2 {
+    width: 75%;
+  }
+  main .main-container2 .text-container2 .card-container {
+    overflow-y: scroll;
+  }
+  main .main-container3 {
+    width: 100%;
+    justify-content: center;
+  }
+  main .main-container3 .frontInfo {
+    padding: 20px 0;
+    width: 50%;
+  }
+  main .main-container3 .frontInfo .skills {
+    gap: 30px;
+    padding: 0 40px;
+    flex-wrap: wrap;
+  }
+  main .main-container3 .frontInfo .skills .allInfo {
+    width: 126px;
+  }
+}
+@media (max-width: 768px) {
+  .main-container5 {
+    align-items: center;
+    width: 100%;
+    justify-content: center;
+    flex-direction: column-reverse;
+  }
+}
+@media (max-width: 724px) {
+  main .main-container3 {
+    width: 100%;
+    justify-content: center;
+  }
+  main .main-container3 .frontInfo {
+    width: 75%;
+    padding: 20px 0;
+  }
+  main .main-container3 .frontInfo .skills {
+    gap: 30px;
+    padding: 0 40px;
+    flex-wrap: wrap;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+@media (max-width: 480px) {
+  main .main-container3 {
+    width: 100%;
+    justify-content: center;
+  }
+  main .main-container3 .frontInfo {
+    width: 75%;
+    padding: 20px 0;
+  }
+  main .main-container3 .frontInfo .skills {
+    gap: 30px;
+    padding: 0 40px;
+    flex-wrap: wrap;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
