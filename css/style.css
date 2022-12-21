@@ -470,6 +470,9 @@ footer .footerContent .socialMedia a {
     padding: 0 40px;
     flex-wrap: wrap;
   }
+  footer .footerContent ul li a {
+    font-size: 13px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
